@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Campaign Signup</title>
+  <link rel="stylesheet" href="../css/signprof.css">
+  <script defer src="../javascript/signup.js"></script>
+</head>
+<body>
+  <h1>Clean Water Campaign </h1>
+  <p class="tagline">Every drop counts — join us in making clean water accessible to all!</p>
+
+  <form id="signup-form" onsubmit="handleSubmit(event)">
+    <label>First Name* <input type="text" id="firstName" required></label>
+    <span class="error" id="firstNameError"></span>
+
+    <label>Last Name* <input type="text" id="lastName" required></label>
+    <span class="error" id="lastNameError"></span>
+
+    <label>Sex*<br>
+      <input type="radio" name="sex" value="Male"> Male
+      <input type="radio" name="sex" value="Female"> Female
+      <input type="radio" name="sex" value="Prefer not to say"> Prefer not to say
+    </label>
+    <span class="error" id="sexError"></span>
+
+    <label>Email* <input type="email" id="email" required></label>
+    <span class="error" id="emailError"></span>
+
+    <label>Password* <input type="password" id="password" required></label>
+    <span class="error" id="passwordError"></span>
+
+    <label>Contact Number <input type="text" id="contact"></label>
+
+    <label>Why you're supporting our campaign *<br>
+      <textarea id="reason" required></textarea>
+    </label>
+    <span class="error" id="reasonError"></span>
+
+    <button type="submit">Join the Cause</button>
+  </form>
+</body>
+</html>
